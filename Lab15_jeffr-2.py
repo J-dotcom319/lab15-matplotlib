@@ -14,8 +14,9 @@ import matplotlib.pyplot as plt
 
 def plot_cubes(values, cubes, title, filename):
     """Plot cubes against their values and save the figure to a PNG file."""
-    fig, ax = plt.subplots()
-    ax.plot(values, cubes, linewidth=3)
+    fig, ax = plt.subplots()    
+    ax.plot(values, cubes, linewidth=3, color="darkred", linestyle="--")
+    ax.grid(True)
     ax.set_title(title, fontsize=24)
     ax.set_xlabel("Value", fontsize=14)
     ax.set_ylabel("Cube of Value", fontsize=14)
